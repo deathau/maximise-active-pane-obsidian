@@ -1,6 +1,6 @@
 {
   "name": "maximise-active-pane-obsidian",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Simply fills the workspace with the active pane",
   "main": "main.js",
   "scripts": {
