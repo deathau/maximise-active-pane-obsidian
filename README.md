@@ -73,6 +73,9 @@ much, feel free to throw some coins in my hat via the following:
 [![Paypal](https://img.shields.io/badge/paypal-deathau-yellow?style=social&logo=paypal)](https://paypal.me/deathau)
 
 # Version History
+## 0.0.3
+- Fix for incompatibility with Sliding Panes (and potentially other plugins) (Thanks PJ Eby!)
+
 ## 0.0.2
 - Fix for specific cases of pane not being maximised properly (Thanks AlansCodeLog!)
 
