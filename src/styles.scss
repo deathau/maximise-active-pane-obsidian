@@ -1,6 +1,6 @@
 .plugin-maximise-active-pane {
   .workspace-split.maximised .workspace-leaf:not(.mod-active),
-  .workspace-split.maximised .workspace-leaf.mod-active~.workspace-split {
+  .workspace-split.maximised .workspace-split:not(.maximisedparentsplit) {
     display: none;
   }
   .workspace-split.maximised .workspace-leaf.mod-active {
