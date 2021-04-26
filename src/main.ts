@@ -26,6 +26,12 @@ export default class MaximiseActivePanePlugin extends PluginBase {
       callback: () => {
         // simply toggle the 'maximised' class and let the css do its thing
         this.rootSplit.containerEl.toggleClass('maximised', !this.rootSplit.containerEl.hasClass('maximised'));
+        if (this.app.workspace.activeLeaf) {
+          let i = this.app.workspace.activeLeaf.containerEl.parentNode;
+          for (; i != this.rootSplit.containerEl ; i = i.parentNode) {
+          i.toggleClass('maximisedparentsplit', !i.hasClass('maximisedparentsplit'));
+          };
+        };
         this.app.workspace.onLayoutChange();
       }
     });
